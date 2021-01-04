@@ -1,6 +1,6 @@
 <template>
   <div class="Calculate">
-    <h2>金额结算</h2>
+    <div class="head">金额结算</div>
   </div>
 </template>
 
@@ -16,5 +16,13 @@ export default {
 <style scoped lang="scss">
 .Calculate {
   text-align: center;
+    .head {
+    color: #43425d;
+    font-size: 30px;
+    font-family: PingFang SC;
+    font-weight: 600;
+    margin-bottom: 40px;
+    opacity: 0.8;
+  }
 }
 </style>

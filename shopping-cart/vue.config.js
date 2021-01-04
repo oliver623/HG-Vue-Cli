@@ -1,5 +1,5 @@
 module.exports = {
-  publicPath: '/',
+  publicPath: './',
   outputDir:'Root',
   devServer: {
     port: 60023,

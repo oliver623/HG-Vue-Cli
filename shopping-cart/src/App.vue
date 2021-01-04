@@ -19,7 +19,9 @@
           :name="tab"
         ></el-tab-pane>
       </el-tabs>
-      <router-view></router-view>
+      <keep-alive>
+        <router-view></router-view>
+      </keep-alive>
     </div>
   </div>
 </template>
@@ -36,9 +38,9 @@ export default {
   methods: {
     handleClick(tab, event) {
       if (tab.active) this.liveStyle = true;
-      if(tab.name === '商品列表') this.$router.push('/')
-      else if(tab.name === '购物车') this.$router.push({path: '/cart'})
-      else this.$router.push({name: 'Calculate'})
+      if (tab.name === "商品列表") this.$router.push("/");
+      else if (tab.name === "购物车") this.$router.push({ path: "/cart" });
+      else this.$router.push({ name: "Calculate" });
     },
   },
 };
@@ -50,8 +52,7 @@ export default {
 }
 .tabStyle {
   &.tabClick {
-    
-  color: orangered;
+    color: #ff734a;
   }
 }
 </style>

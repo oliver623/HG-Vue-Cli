@@ -5,12 +5,11 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    // 购物车中的商品总数量
-    count: 0
+    getCartProduct:[]
   },
   mutations: {
-    count(state){
-      
+    getCartProduct(state, getCartProduct){
+      state.getCartProduct = getCartProduct
     }
   },
   actions: {
